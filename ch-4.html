@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TŌGE — Chapter 4: The Evaluation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-t"><a href="../">T<span>Ō</span>GE</a></div>
+  <div class="nav-ch">Chapter Four: The Evaluation</div>
+  <div class="cs">
+    <button class="cs-b" id="csBtn">Chapters ▾</button>
+    <div class="dd" id="dd">
+      <a href="./"><span>00</span><span class="dt">Contents</span></a>
+      <a href="ch-1.html"><span>01</span><span class="dt">The Fade</span></a>
+      <a href="ch-2.html"><span>02</span><span class="dt">The Lab</span></a>
+      <a href="ch-3.html"><span>03</span><span class="dt">The Shelf</span></a>
+      <a href="ch-4.html"><span>04</span><span class="dt">The Evaluation</span></a>
+      <a href="ch-5.html"><span>05</span><span class="dt">The Lesson</span></a>
+      <a href="ch-6.html"><span>06</span><span class="dt">The Commons</span></a>
+      <a href="ch-7.html"><span>07</span><span class="dt">The Visit</span></a>
+      <a href="ch-8.html"><span>08</span><span class="dt">The Notebook</span></a>
+      <a href="ch-9.html"><span>09</span><span class="dt">The Reflection</span></a>
+      <a href="ch-10.html"><span>10</span><span class="dt">The Choice</span></a>
+    </div>
+  </div>
+  <div class="nav-p" id="prog"></div>
+</nav>
+
+<article class="ch">
+  <header class="ch-h">
+    <div class="ch-n">Chapter Four</div>
+    <h2 class="ch-t">The Evaluation</h2>
+    <div class="ch-d">Day 5</div>
+  </header>
+
+  <div id="chapter-content"></div>
+
+  <div class="ch-end">
+    <div class="ch-end-t">Chapter 4 — The Evaluation — End</div>
+    <div class="ch-end-tx">The fire has arrived. The ghost is starting to burn.</div>
+    <div class="ch-nav">
+      <a href="ch-3.html">← Previous</a>
+      <a href="ch-5.html">Next →</a>
+    </div>
+  </div>
+</article>
+
+<footer><p>TŌGE — Written by Arnaud Saint-Pierre<br><a href="./">← Arc One</a> · <a href="../">Hub</a></p></footer>
+
+<script src="../engine.js"></script>
+<script>
+const IMG_SABLE = "images/sable.webp";
+const IMG_SCARS = "images/scars.webp";
+
+document.getElementById('chapter-content').innerHTML = `
+${TM(['"They told me someone named Sable would evaluate me."','"The way Vera said her name — like a warning wrapped in respect — I don\'t think \'evaluation\' means a written test."'])}
+${N('A knock. A single STRIKE. Like a fist testing a wall.')}
+${I(IMG_SABLE,"Sable Mirin","manga-char")}
+${T('"She\'s looking at me like I\'m already dead and she\'s deciding whether to be sad about it."')}
+${D(S('Sable','"You\'re Forty-Four."'))}
+${D(S('Kairo','"Kairo."'))}
+${D(S('Sable','"You\'re Forty-Four until you prove otherwise. Follow me. Don\'t talk."'))}
+${P('Page 5 – 7')}
+${N('An empty white room. White walls. White floor. A single chair.')}
+${D(S('Sable','"Your evaluation. Sit. Kessler thinks you\'re special. I think you\'re just another watcher who got scared when watching stopped working. Prove me wrong."'))}
+${N('She pulls out a photograph. Kairo\'s eyes go WIDE.')}
+${N('Two young men. Early twenties. Arms around each other. Laughing. KAIRO. And someone who looks like him but different — sharper, wilder eyes, a smile too bright. ELIOT. His brother. Before.')}
+${P('Page 10 – 14')}
+${D(S('Kairo','"My brother. He was brilliant. More than me. He pushed too hard. His mind broke. He\'s in a facility. Has been for three years. I haven\'t visited in two."'))}
+${D(S('Sable','"Because watching him hurts and you only know how to watch. So you stopped watching the one thing you should have."'))}
+${D(S('Sable','"You didn\'t avoid participation. You participated in abandonment."'))}
+${SP()}
+${D(S('Sable','"Here\'s what I know about faders: You think watching keeps you safe. But you\'ve already lost. Every second you spend observing your life is a second you didn\'t live. Your brother LIVED. Even though it broke him. You watched. And you\'re disappearing anyway. So who made the better choice?"'))}
+${P('Page 15 – 17')}
+${D(S('Kairo','"You don\'t know anything about me."'))}
+${D(S('Sable','"And what are you? Crash into everything and call it living?"'))}
+${D(S('Sable','"Yes. And I\'m still here."'))}
+${N('She rolls up her sleeve. SCARS — not wounds but BURNS. Like circuitry. Written from the inside. And they GLOW.')}
+${D(S('Sable','"I touched the other side. The boundary. The place where observation and reality meet. I was inside for six seconds. It felt like years. I came back with these. Permanent entanglement with whatever\'s on the other side."'))}
+${D(S('Sable','"The question isn\'t whether you\'re smart enough. It\'s: can you stop watching long enough to actually DO something? When the choice is hard — will you ACT?"'))}
+${P('Page 19 – 24')}
+${N('He reaches toward her arm. Slowly.')}
+${D(S('Kairo','"Can I?"'))}
+${N('No one asks first. She\'s surprised.')}
+${D(S('Sable','"...Yes."'))}
+${N('He touches her arm. A vibration. A hum. Like touching possibility itself. His hand SOLIDIFIES. Visibly. The translucence vanishing in real-time.')}
+${T('"Connection. This is what connection feels like. Not watching. Not analyzing. Being HERE. With someone. Real."')}
+${D(S('Sable','"Your fade rate dropped by almost 40%. That shouldn\'t be possible from a single contact."'))}
+${SP()}
+${D(S('Sable','"Keep the photo. Face-up. Look at it every day. And call your brother. Participation means doing the hard things."'))}
+${N('At the door, she stops.')}
+${D(S('Sable','"...Kairo. Don\'t die. You\'re interesting."'))}
+${T('"She\'s right. About all of it. I participated in abandonment. I have nine months. A brother I need to see. And a woman I can\'t stop thinking about."')}
+`;
+
+initKeyNav('ch-3.html', 'ch-5.html');
+</script>
+</body>
+</html>

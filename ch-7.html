@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TŌGE — Chapter 7: The Visit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-t"><a href="../">T<span>Ō</span>GE</a></div>
+  <div class="nav-ch">Chapter Seven: The Visit</div>
+  <div class="cs">
+    <button class="cs-b" id="csBtn">Chapters ▾</button>
+    <div class="dd" id="dd">
+      <a href="./"><span>00</span><span class="dt">Contents</span></a>
+      <a href="ch-1.html"><span>01</span><span class="dt">The Fade</span></a>
+      <a href="ch-2.html"><span>02</span><span class="dt">The Lab</span></a>
+      <a href="ch-3.html"><span>03</span><span class="dt">The Shelf</span></a>
+      <a href="ch-4.html"><span>04</span><span class="dt">The Evaluation</span></a>
+      <a href="ch-5.html"><span>05</span><span class="dt">The Lesson</span></a>
+      <a href="ch-6.html"><span>06</span><span class="dt">The Commons</span></a>
+      <a href="ch-7.html"><span>07</span><span class="dt">The Visit</span></a>
+      <a href="ch-8.html"><span>08</span><span class="dt">The Notebook</span></a>
+      <a href="ch-9.html"><span>09</span><span class="dt">The Reflection</span></a>
+      <a href="ch-10.html"><span>10</span><span class="dt">The Choice</span></a>
+    </div>
+  </div>
+  <div class="nav-p" id="prog"></div>
+</nav>
+
+<article class="ch">
+  <header class="ch-h">
+    <div class="ch-n">Chapter Seven</div>
+    <h2 class="ch-t">The Visit</h2>
+    <div class="ch-d">Day 13</div>
+  </header>
+
+  <div id="chapter-content"></div>
+
+  <div class="ch-end">
+    <div class="ch-end-t">Chapter 7 — The Visit — End</div>
+    <div class="ch-end-tx">The broken mirror spoke. The answer might be in a madman's notebook.</div>
+    <div class="ch-nav">
+      <a href="ch-6.html">← Previous</a>
+      <a href="ch-8.html">Next →</a>
+    </div>
+  </div>
+</article>
+
+<footer><p>TŌGE — Written by Arnaud Saint-Pierre<br><a href="./">← Arc One</a> · <a href="../">Hub</a></p></footer>
+
+<script src="../engine.js"></script>
+<script>
+const IMG_ELIOT = "images/eliot.webp";
+
+document.getElementById('chapter-content').innerHTML = `
+${N('A bus through grey suburbs. Rain on windows. The world outside the Lab feels FLAT. Desaturated.')}
+${T('"I\'ve seen universes in jars. And now I\'m on a bus. Going to see my brother. The one who touched the edge before I knew there was an edge."')}
+${D(S('Marcus','"You haven\'t said a word in forty minutes."'))}
+${D(S('Kairo','"I don\'t know what to say to him."'))}
+${D(S('Marcus','"Then don\'t say anything. Sometimes presence is the whole message."'))}
+${P('Page 3 – 6')}
+${N('HAVEN GROVE CARE FACILITY. Institutional but trying not to be. Gardens. Soft colors. The architecture of managed expectations.')}
+${D(S('Marcus','"Whatever you see — he\'s still your brother. The illness is something that happened to him. It\'s not who he IS."'))}
+${N('The nurse at the desk. Kind eyes.')}
+${D(S('Nurse','"You must be Kairo. Eliot\'s been talking about you all week. He showed me your picture. Told me you were going to do great things. He\'s very proud of you."'))}
+${N('Room 217. Hand raised to knock. Two years since he\'s seen his brother.')}
+${T('"I told myself I was protecting us both. I was just scared."')}
+${P('Page 8 – 11')}
+${I(IMG_ELIOT,"Eliot Vance","manga-char")}
+${D(S('Eliot','"You came."'))}
+${D(S('Kairo','"I came."'))}
+${N('Eliot crosses the room. Hugs him. Not tight. Just present. Warm. Real.')}
+${D(S('Eliot','"I knew you would. Eventually."'))}
+${D(S('Kairo','"I\'m sorry. I\'m so sorry I—"'))}
+${D(S('Eliot','"Shh. You\'re here now."'))}
+${P('Page 12 – 17')}
+${D(S('Eliot','"Some days I can see clearly. Other days the equations come back. On the walls. In people\'s faces. They\'re so beautiful, Kairo. But beauty can be a trap. I looked too deep. I saw something the human mind isn\'t meant to hold. And it rewired me."'))}
+${D(S('Kairo','"What did you see?"'))}
+${D(S('Eliot','"I saw that we\'re not separate. Any of us. I saw the seams. The places where one thing becomes another. And when you see that — really see it — you can\'t unsee it. The boundaries dissolve. I don\'t know where I end and the world begins anymore. That\'s what broke me."'))}
+${D(S('Kairo','"The Lab. You found the Lab."'))}
+${D(S('Eliot','"Who do you think I was working with when I broke?"'))}
+${SP()}
+${D(S('Eliot','"Before it was Kessler\'s, it was smaller. I touched the boundary. The place where observation and reality meet. I saw what\'s on the other side. For just a moment. It was too much. I couldn\'t come back all the way."'))}
+${P('Page 19 – 22')}
+${D(S('Eliot','"Be careful. The boundary isn\'t meant to be crossed. Not fully."'))}
+${D(S('Kairo','"But you LIVED. You chose to engage. Even if it broke you."'))}
+${D(S('Eliot','"And I participated too much. Dove too deep. We\'re both broken, little brother. Just in different directions. The answer isn\'t watching or diving. The answer is BALANCE. Participate, but stay tethered. I didn\'t have a tether. Make sure you do."'))}
+${N('Eliot hands him a notebook. Old. Worn. Filled with handwriting and diagrams.')}
+${D(S('Eliot','"My notes. From before. From the Lab. Some of it\'s madness. But some of it might be true."'))}
+${P('Page 22 – 27')}
+${D(S('Eliot','"Go save yourself, little brother. And if you figure out how to cross the boundary safely — come back and teach me."'))}
+${D(S('Kairo','"I love you, Eliot."'))}
+${D(S('Eliot','"I know. I\'ve always known. Even when you couldn\'t say it."'))}
+${N('The first page of the notebook. Eliot\'s handwriting. Frantic but precise.')}
+${M('"The observer and the observed are the same thing, wearing different masks."')}
+${M('"We are not IN the universe. We are the universe, pretending to be separate. And when you see through the pretense — the separation ends."')}
+`;
+
+initKeyNav('ch-6.html', 'ch-8.html');
+</script>
+</body>
+</html>

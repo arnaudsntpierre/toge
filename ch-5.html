@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TŌGE — Chapter 5: The Lesson</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-t"><a href="../">T<span>Ō</span>GE</a></div>
+  <div class="nav-ch">Chapter Five: The Lesson</div>
+  <div class="cs">
+    <button class="cs-b" id="csBtn">Chapters ▾</button>
+    <div class="dd" id="dd">
+      <a href="./"><span>00</span><span class="dt">Contents</span></a>
+      <a href="ch-1.html"><span>01</span><span class="dt">The Fade</span></a>
+      <a href="ch-2.html"><span>02</span><span class="dt">The Lab</span></a>
+      <a href="ch-3.html"><span>03</span><span class="dt">The Shelf</span></a>
+      <a href="ch-4.html"><span>04</span><span class="dt">The Evaluation</span></a>
+      <a href="ch-5.html"><span>05</span><span class="dt">The Lesson</span></a>
+      <a href="ch-6.html"><span>06</span><span class="dt">The Commons</span></a>
+      <a href="ch-7.html"><span>07</span><span class="dt">The Visit</span></a>
+      <a href="ch-8.html"><span>08</span><span class="dt">The Notebook</span></a>
+      <a href="ch-9.html"><span>09</span><span class="dt">The Reflection</span></a>
+      <a href="ch-10.html"><span>10</span><span class="dt">The Choice</span></a>
+    </div>
+  </div>
+  <div class="nav-p" id="prog"></div>
+</nav>
+
+<article class="ch">
+  <header class="ch-h">
+    <div class="ch-n">Chapter Five</div>
+    <h2 class="ch-t">The Lesson</h2>
+    <div class="ch-d">Day 7</div>
+  </header>
+
+  <div id="chapter-content"></div>
+
+  <div class="ch-end">
+    <div class="ch-end-t">Chapter 5 — The Lesson — End</div>
+    <div class="ch-end-tx">The physics is delivered. The cost of knowledge is clear.</div>
+    <div class="ch-nav">
+      <a href="ch-4.html">← Previous</a>
+      <a href="ch-6.html">Next →</a>
+    </div>
+  </div>
+</article>
+
+<footer><p>TŌGE — Written by Arnaud Saint-Pierre<br><a href="./">← Arc One</a> · <a href="../">Hub</a></p></footer>
+
+<script src="../engine.js"></script>
+<script>
+const IMG_QUARK = "images/quark.webp";
+
+document.getElementById('chapter-content').innerHTML = `
+${TM(['"Sable\'s words won\'t leave me alone. \'You participated in abandonment.\'"','"I called the facility yesterday. First time in two years. Eliot was asleep. They said he asks about me."','"Kessler wants to teach me something. He says I\'m ready."'])}
+${D(S('Kessler','"Sable tells me you responded to contact faster than anyone she\'s measured. Forty percent from a single touch. The average is six percent. The previous record was nineteen."'))}
+${D(S('Kessler','"Before I teach you anything — why do you think observation affects reality?"'))}
+${D(S('Kairo','"The observer effect. Quantum mechanics—"'))}
+${D(S('Kessler','"I didn\'t ask you to recite. I asked what you THINK. In your gut — why should looking at something change what it is?"'))}
+${P('Page 6 – 9')}
+${N('A quark appears in the center of the room. A cloud of possibility, shimmering.')}
+${I(IMG_QUARK,"A cloud of possibility","manga-portrait")}
+${D(S('Kessler','"Right now, it exists in superposition. Every place it COULD be, simultaneously. Watch."'))}
+${N('Kessler focuses. The shimmering cloud SNAPS into a single point. Sharp. Definite.')}
+${D(S('Kessler','"My observation forced it to choose. But here\'s the question: What gave my observation that power? I\'m made of quarks. My eyes are quarks. One collection of quarks looked at another — and somehow that MATTERED."'))}
+${D(S('Kessler','"A camera can\'t collapse a wave function. A rock can\'t. Only consciousness can. Only a MIND looking. Which means consciousness isn\'t just a product of physics. It\'s a PARTICIPANT in physics."'))}
+${P('Page 10 – 13')}
+${D(S('Kessler','"Consciousness doesn\'t CREATE reality. It SELECTS. The possibilities already exist. Consciousness chooses which becomes real. Every time you observe something, you\'re killing every other version of what it could have been. Every glance is a genocide of possibilities."'))}
+${D(S('Kessler','"Now apply this to yourself. A consciousness that only observes, without acting — it stops collapsing its own wave function. It stops choosing itself into existence. It becomes probability without actuality. It fades."'))}
+${D(S('Kairo','"If every observation kills possibilities... isn\'t participating just choosing which realities to murder?"'))}
+${D(S('Kessler','"Yes. Every choice is a death. That\'s the cost of being real. The price of existence is the constant murder of what could have been."'))}
+${P('Page 14 – 18')}
+${D(S('Kessler','"I\'ve made more observations than any human in history. The civilizations in The Static — every time I observe them, I force their reality into one path. Knowledge is violence. Observation is choice. And choice is death."'))}
+${D(S('Kairo','"Then why keep looking?"'))}
+${D(S('Kessler','"Because NOT looking is also a choice. There\'s no neutral position. You\'re either collapsing reality or abandoning it."'))}
+${D(S('Kessler','"The 0.04% — WHY does consciousness have this power? Is it fundamental? Emergent? What IS it? Until I understand what consciousness IS, I can\'t understand why you\'re fading."'))}
+${D(S('Kairo','"What do you want me to do?"'))}
+${D(S('Kessler','"Learn. Participate. Let us study you while you study us. And maybe — together — we\'ll find what I couldn\'t find alone."'))}
+${P('Page 21 – 23')}
+${D(S('Kairo','"If I\'m going to collapse reality, I might as well do it on purpose. Teach me everything."'))}
+${D(S('Kessler','"I think consciousness isn\'t just part of the universe. I think consciousness IS the universe. Experiencing itself. Choosing itself into existence, moment by moment. And we\'re all just... apertures. Windows through which reality looks at itself."'))}
+${T('"Windows through which reality looks at itself. If that\'s true — then what does it mean to fade? Am I a window closing? Or is the universe just... looking away?"')}
+${ST('His reflection in a polished surface — solid. But far behind him, a shape. Faint. Watching. THE INVISIBLE RACE. First true glimpse.')}
+`;
+
+initKeyNav('ch-4.html', 'ch-6.html');
+</script>
+</body>
+</html>

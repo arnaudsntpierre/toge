@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TŌGE — Chapter 1: The Fade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-t"><a href="../">T<span>Ō</span>GE</a></div>
+  <div class="nav-ch">Chapter One: The Fade</div>
+  <div class="cs">
+    <button class="cs-b" id="csBtn">Chapters ▾</button>
+    <div class="dd" id="dd">
+      <a href="./"><span>00</span><span class="dt">Contents</span></a>
+      <a href="ch-1.html"><span>01</span><span class="dt">The Fade</span></a>
+      <a href="ch-2.html"><span>02</span><span class="dt">The Lab</span></a>
+      <a href="ch-3.html"><span>03</span><span class="dt">The Shelf</span></a>
+      <a href="ch-4.html"><span>04</span><span class="dt">The Evaluation</span></a>
+      <a href="ch-5.html"><span>05</span><span class="dt">The Lesson</span></a>
+      <a href="ch-6.html"><span>06</span><span class="dt">The Commons</span></a>
+      <a href="ch-7.html"><span>07</span><span class="dt">The Visit</span></a>
+      <a href="ch-8.html"><span>08</span><span class="dt">The Notebook</span></a>
+      <a href="ch-9.html"><span>09</span><span class="dt">The Reflection</span></a>
+      <a href="ch-10.html"><span>10</span><span class="dt">The Choice</span></a>
+    </div>
+  </div>
+  <div class="nav-p" id="prog"></div>
+</nav>
+
+<article class="ch">
+  <header class="ch-h">
+    <div class="ch-n">Chapter One</div>
+    <h2 class="ch-t">The Fade</h2>
+  </header>
+
+  <div id="chapter-content"></div>
+
+  <div class="ch-end">
+    <div class="ch-end-t">Chapter 1 — The Fade — End</div>
+    <div class="ch-end-tx">The bomb is planted. The fuse is lit.</div>
+    <div class="ch-nav">
+      <a href="./">Contents</a>
+      <a href="ch-2.html">Next →</a>
+    </div>
+  </div>
+</article>
+
+<footer><p>TŌGE — Written by Arnaud Saint-Pierre<br><a href="./">← Arc One</a> · <a href="../">Hub</a></p></footer>
+
+<script src="../engine.js"></script>
+<script>
+// Image paths — swap these for real files when art is ready
+const IMG_EYE = "images/eye.webp";
+const IMG_KAIRO = "images/kairo.webp";
+const IMG_APT = "images/apartment.webp";
+const IMG_FADE = "images/fade.webp";
+
+document.getElementById('chapter-content').innerHTML = `
+<div style="margin:48px 0;height:60vh;background:#000;border:1px solid rgba(184,58,58,0.08)"></div>
+${M('"When did you stop living and start watching?"')}
+${P('Page 2')}
+${I(IMG_EYE,"Checkmate in six moves","manga-wide")}
+${T('"Checkmate in six moves. He doesn\'t see it yet. Interesting."')}
+${P('Page 3')}
+${N('The face. KAIRO VANCE. 27. Unshaved. Handsome if you looked — but the composition draws the eye away from him, past him, like even the art doesn\'t want to focus on him. His hands on a laptop. The chess game on screen. A notification: "Your turn." He sees the win. He feels nothing.')}
+${I(IMG_KAIRO,"Kairo Vance — The Observer","manga-char")}
+${TM(['"The dopamine response should activate now. Pattern recognition reward. Victory anticipation."','"Nothing."'])}
+${P('Page 4')}
+${I(IMG_APT,"A museum of almost. Exhibition ongoing. No visitors.","manga-wide")}
+${N('The room tells the story his face won\'t. A wall of monitors — stock tickers, news feeds, social media — all paused mid-scroll. Books everywhere, half-read, spines cracked at the 30% mark. A guitar in the corner, dust on the strings. A photo frame on the desk, face DOWN. Light through blinds he hasn\'t opened — slats casting prison bars across the floor.')}
+${ST('Kairo sits small in the frame. The room is the subject. He\'s just an object in it.')}
+${P('Page 5')}
+${N('His phone lights up. A text from "Mom" with a heart emoji he didn\'t add — she did, from his phone, years ago.')}
+${D(S('Mom','"Happy birthday sweetheart. Call when you can. Love you always."'))}
+${TM(['"Thanks Mom I\'ll ca—" <em>Deleted.</em>','"Love you t—" <em>Deleted.</em>','The cursor blinks. Empty field. Phone screen going dark. Unanswered.'])}
+${P('Page 6')}
+${N('Kairo at the window. City below. People moving. Living. He watches like a nature documentary.')}
+${N('A couple arguing. She\'s crying. He\'s defensive.')}
+${T('"Infidelity. Recent. She found out but hasn\'t said it yet. They\'ll break up in three weeks. Statistically."')}
+${N('A kid chasing a dog. Pure joy.')}
+${T('"Serotonin and oxytocin flooding his system. He doesn\'t know why he\'s happy. He just is. Efficient."')}
+${N('An old man feeding pigeons. Alone. Content.')}
+${T('"Routine as meaning. The pigeons don\'t know his name. He doesn\'t care. Mutual benefit without attachment."')}
+${P('Page 7')}
+${N('He turns from the window. Catches his reflection in a dark monitor. Normal. He blinks. His reflection doesn\'t blink. He stares. The reflection SMILES. Kairo isn\'t smiling. He blinks again — the reflection is normal.')}
+${TM(['"Fatigue. Hypnagogic hallucination. Dopamine dysregulation from sleep deficit."','"Explanation accepted. Moving on."'])}
+${ST('But his hand is shaking.')}
+${P('Page 8')}
+${N('A coffee shop — the barista looks past him. On the street, a man walks THROUGH him. In an elevator, a woman doesn\'t hear him speak. He holds a door — the old man walks through without seeing the hand that held it. His shadow on the wall — fainter than it should be.')}
+${P('Page 9 – 10')}
+${N('Night. Bathroom. Mirror. His reflection is FAINT. Translucent. He can see the shower curtain THROUGH his own face. He\'s FADING.')}
+${T('"This is not a hallucination."')}
+${N('He stumbles back. Knocks over toiletries — but doesn\'t hear them fall. Runs to the window. Holds up his hands. He can see the lamp THROUGH his palm. Hyperventilating. Sliding down the wall.')}
+${TM(['"Observe. Analyze. Understand."','"OBSERVE. ANALYZE. UNDERSTAND."','"This isn\'t working. Why isn\'t this working."'])}
+${P('Page 11 – 12')}
+${N('Morning. Floor. He hasn\'t moved. Didn\'t sleep. 14 unread messages. He can\'t face the mirror.')}
+${TM(['"Variables: unknown. Hypothesis: none. This is not science. This is fear."','"I don\'t do fear. I observe."'])}
+${N('A knock at the door. Sharp. Precise. Three beats.')}
+${D(S('Voice','"Mr. Vance. I know you\'re home. I know you\'ve been awake for forty-one hours. I know you\'re wondering if you\'re losing your mind. You\'re not. Losing your mind would be simpler."'))}
+${P('Page 13')}
+${N('He opens the door. IRIS CHEN. Not clinical. Not corporate. A college professor who\'s seen too much. A scar along her jaw she doesn\'t hide. Manila envelope. Her eyes meet his — and HOLD. She SEES him. For the first time in months, someone is looking directly at Kairo Vance.')}
+${D(S('Iris','"My name is Iris Chen. I specialize in finding people who are disappearing. And you, Mr. Vance, are almost gone."'))}
+${P('Page 14 – 16')}
+${D(S('Iris','"What do you know about the observer effect?"'))}
+${D(S('Kairo','"Quantum mechanics. The act of observation affects the system being observed—"'))}
+${D(S('Iris','"Not particles. People."'))}
+${N('A photograph. A lab. Five people visible. One gap. An absence where someone should be.')}
+${D(S('Iris','"There are six people in this photograph."'))}
+${D(S('Kairo','"I count five."'))}
+${D(S('Iris','"Exactly."'))}
+${SP()}
+${D(S('Iris','"His name was David Chen. Brilliant. Spent his whole life observing. Never participating. Three years ago, he started fading. First his reflection. Then his shadow. Then photographs couldn\'t capture him. He\'s still alive. We think. But he\'s not HERE anymore. He watched so long, he forgot how to be watched. And without being witnessed... you stop being real."'))}
+${D(S('Iris','"You have eleven months before you\'re like David. Maybe less. You stop it by PARTICIPATING. By choosing. By acting. By being so present in your own life that reality has no choice but to acknowledge you."'))}
+${D(S('Iris','"There\'s a place where people like you learn to become real again. Someone there wants to meet you."'))}
+${P('Page 17')}
+${N('The card. No name. No logo. Just coordinates. And one word:')}
+${M('','TŌGE')}
+${D(S('Iris','"It\'s a Japanese word. It means \'peak.\' Or \'mountain pass.\' The point where you have to commit. You either cross over, or you turn back. There\'s no staying on the peak, Mr. Vance. The wind won\'t let you."'))}
+${P('Page 18 – 20')}
+${N('Alone. The museum of his unlived life. He picks up the face-down photograph. Something cracks. The first real emotion. He puts it face UP. Opens his mom\'s text. Types:')}
+${D(S('Kairo','"I love you. I\'m sorry I\'ve been gone. I\'m going to try to come back."'))}
+${N('Sends it. His hand — slightly more solid.')}
+${I(IMG_FADE,"The Fade — Kairo Vance, disappearing in plain sight","manga-wide")}
+${D(S('Kairo','"Eleven months. Let\'s see if I can do it in ten."'))}
+${N('He walks out. The apartment sits empty. His reflection lingers one extra panel. It\'s smiling again.')}
+`;
+
+initKeyNav(null, 'ch-2.html');
+</script>
+</body>
+</html>

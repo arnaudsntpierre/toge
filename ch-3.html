@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TŌGE — Chapter 3: The Shelf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-t"><a href="../">T<span>Ō</span>GE</a></div>
+  <div class="nav-ch">Chapter Three: The Shelf</div>
+  <div class="cs">
+    <button class="cs-b" id="csBtn">Chapters ▾</button>
+    <div class="dd" id="dd">
+      <a href="./"><span>00</span><span class="dt">Contents</span></a>
+      <a href="ch-1.html"><span>01</span><span class="dt">The Fade</span></a>
+      <a href="ch-2.html"><span>02</span><span class="dt">The Lab</span></a>
+      <a href="ch-3.html"><span>03</span><span class="dt">The Shelf</span></a>
+      <a href="ch-4.html"><span>04</span><span class="dt">The Evaluation</span></a>
+      <a href="ch-5.html"><span>05</span><span class="dt">The Lesson</span></a>
+      <a href="ch-6.html"><span>06</span><span class="dt">The Commons</span></a>
+      <a href="ch-7.html"><span>07</span><span class="dt">The Visit</span></a>
+      <a href="ch-8.html"><span>08</span><span class="dt">The Notebook</span></a>
+      <a href="ch-9.html"><span>09</span><span class="dt">The Reflection</span></a>
+      <a href="ch-10.html"><span>10</span><span class="dt">The Choice</span></a>
+    </div>
+  </div>
+  <div class="nav-p" id="prog"></div>
+</nav>
+
+<article class="ch">
+  <header class="ch-h">
+    <div class="ch-n">Chapter Three</div>
+    <h2 class="ch-t">The Shelf</h2>
+    <div class="ch-d">Day 3</div>
+  </header>
+
+  <div id="chapter-content"></div>
+
+  <div class="ch-end">
+    <div class="ch-end-t">Chapter 3 — The Shelf — End</div>
+    <div class="ch-end-tx">They've seen infinity. Now they meet the fire.</div>
+    <div class="ch-nav">
+      <a href="ch-2.html">← Previous</a>
+      <a href="ch-4.html">Next →</a>
+    </div>
+  </div>
+</article>
+
+<footer><p>TŌGE — Written by Arnaud Saint-Pierre<br><a href="./">← Arc One</a> · <a href="../">Hub</a></p></footer>
+
+<script src="../engine.js"></script>
+<script>
+const IMG_VERA = "images/vera.webp";
+const IMG_SHELF = "images/shelf.webp";
+
+document.getElementById('chapter-content').innerHTML = `
+${TM(['"I\'ve seen things in three days that would take a lifetime to understand."','"I haven\'t slept. I\'m afraid if I close my eyes, I\'ll wake up back in the apartment."'])}
+${N('VERA OKONKWO. Gaunt. Intense. Beautiful bones hidden under exhaustion.')}
+${I(IMG_VERA,"Vera Okonkwo — Exhausted brilliance","manga-char")}
+${D(S('Vera','"Kessler says you\'re ready for the Shelf. Don\'t talk to me. I\'m solving something in my head."'))}
+${D(S('Vera','"First rule of the Shelf: Don\'t touch the containers. Second rule: Don\'t talk to the containers."'))}
+${D(S('Kairo','"Talk to them? They\'re containers."'))}
+${D(S('Vera','"Are they?"'))}
+${P('Page 5 – 8')}
+${I(IMG_SHELF,"The Shelf — A corridor stretching into infinity","manga-wide")}
+${N('THE SHELF. Walls that curve like the inside of something LIVING. Cold enough to see breath. Light from nowhere. A hum — deep, constant — like the universe\'s heartbeat.')}
+${N('The first container: a GALAXY. Small as a snow globe. Stars burning. Solar systems visible.')}
+${D(S('Vera','"Universe 7,431-C. The Blue."'))}
+${D(S('Vera','"Omnidirectional light scatter. No darkness. No shadows. The beings inside sense pressure differentials — like echolocation through light."'))}
+${D(S('Kairo','"So they\'re blind?"'))}
+${D(S('Vera','"Are you blind because you can\'t see radio waves? We see 0.0035% of the electromagnetic spectrum. Those beings process 100%. We\'re the blind ones."'))}
+${P('Page 10 – 12')}
+${N('A container that looks FROZEN. Not a flicker of motion.')}
+${D(S('Vera','"Universe 8,844-Δ. The Static. Time ratio: one to ten trillion. One second for us is thirty-one thousand years for them. While we\'ve been standing here — eight seconds — two hundred and fifty thousand years have passed inside. Civilizations risen, died, and been replaced. All in a blink."'))}
+${D(S('Kairo','"They\'re living entire lives right now. Falling in love. Dying. And we\'ll never know."'))}
+${D(S('Vera','"Scale is not a fact. It\'s a perspective."'))}
+${P('Page 13 – 15')}
+${N('A container that looks EMPTY. Perfectly clear.')}
+${D(S('Kairo','"This one\'s empty."'))}
+${D(S('Vera','"No. This one\'s full. Universe 5,012-Ω. The Empty. Composed entirely of dark matter. More mass than our observable universe. Something VAST. We just can\'t see it."'))}
+${D(S('Kairo','"And in our universe... 85% of all matter is dark matter. Here. Around us. Right now."'))}
+${D(S('Vera','"Correct. We are surrounded by something we cannot perceive. It could have civilizations. Life. It\'s HERE. In this room. And we\'re blind to it."'))}
+${P('Page 16 – 19')}
+${N('The end of the corridor. One more container. COVERED. A black cloth that hangs like carved shadow.')}
+${D(S('Kairo','"What\'s under the cloth?"'))}
+${D(S('Vera','"Some questions aren\'t for your clearance level. Don\'t ask about The Covered. Don\'t look at it too long. That\'s not a rule. That\'s survival advice."'))}
+${TM(['"I learned three things today."','"One: Perception is not reality. We\'re blind to almost everything."','"Two: Scale is not a fact. It\'s a perspective."','"Three: Some questions are survival threats."','"I\'m going to find out what\'s under that cloth. Even if it kills me."'])}
+${ST('His reflection. It\'s smiling again.')}
+`;
+
+initKeyNav('ch-2.html', 'ch-4.html');
+</script>
+</body>
+</html>

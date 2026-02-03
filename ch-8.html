@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TŌGE — Chapter 8: The Notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-t"><a href="../">T<span>Ō</span>GE</a></div>
+  <div class="nav-ch">Chapter Eight: The Notebook</div>
+  <div class="cs">
+    <button class="cs-b" id="csBtn">Chapters ▾</button>
+    <div class="dd" id="dd">
+      <a href="./"><span>00</span><span class="dt">Contents</span></a>
+      <a href="ch-1.html"><span>01</span><span class="dt">The Fade</span></a>
+      <a href="ch-2.html"><span>02</span><span class="dt">The Lab</span></a>
+      <a href="ch-3.html"><span>03</span><span class="dt">The Shelf</span></a>
+      <a href="ch-4.html"><span>04</span><span class="dt">The Evaluation</span></a>
+      <a href="ch-5.html"><span>05</span><span class="dt">The Lesson</span></a>
+      <a href="ch-6.html"><span>06</span><span class="dt">The Commons</span></a>
+      <a href="ch-7.html"><span>07</span><span class="dt">The Visit</span></a>
+      <a href="ch-8.html"><span>08</span><span class="dt">The Notebook</span></a>
+      <a href="ch-9.html"><span>09</span><span class="dt">The Reflection</span></a>
+      <a href="ch-10.html"><span>10</span><span class="dt">The Choice</span></a>
+    </div>
+  </div>
+  <div class="nav-p" id="prog"></div>
+</nav>
+
+<article class="ch">
+  <header class="ch-h">
+    <div class="ch-n">Chapter Eight</div>
+    <h2 class="ch-t">The Notebook</h2>
+    <div class="ch-d">Day 14</div>
+  </header>
+
+  <div id="chapter-content"></div>
+
+  <div class="ch-end">
+    <div class="ch-end-t">Chapter 8 — The Notebook — End</div>
+    <div class="ch-end-tx">The relapse happened. The flaw was revealed. And something is watching from outside.</div>
+    <div class="ch-nav">
+      <a href="ch-7.html">← Previous</a>
+      <a href="ch-9.html">Next →</a>
+    </div>
+  </div>
+</article>
+
+<footer><p>TŌGE — Written by Arnaud Saint-Pierre<br><a href="./">← Arc One</a> · <a href="../">Hub</a></p></footer>
+
+<script src="../engine.js"></script>
+<script>
+const IMG_CONSPIRACY = "images/conspiracy.webp";
+const IMG_SCARS = "images/scars.webp";
+
+document.getElementById('chapter-content').innerHTML = `
+${TM(['"I haven\'t left my room in three days."','"Eliot\'s notebook is everything. Equations I\'ve never seen. Theories rewriting my brain."','"I told myself I was studying. I was lying. I was hiding."'])}
+${I(IMG_CONSPIRACY,"Three days without leaving. Equations on every surface.","manga-wide")}
+${N('Papers everywhere. Equations on the window. Coffee cups. The room looks like a conspiracy theorist\'s lair. He\'s WATCHING the equations. Not engaging. The old Kairo. The ghost.')}
+${D(S('Sable','"No. You\'re watching. Three days. Two missed sessions with Kessler. No food. No people. And your fade rate? You\'re back to sixty-eight percent."'))}
+${D(S('Kairo','"I\'ve been engaged. I\'ve been learning—"'))}
+${D(S('Sable','"You\'ve been OBSERVING. Alone. Analyzing your brother\'s madness instead of living your own life. Learning isn\'t participating. Reading isn\'t doing. You found a new way to hide, and dressed it up as progress."'))}
+${P('Page 7 – 9')}
+${D(S('Sable','"Some nights, I want to go back. To the boundary. Being HERE — fully present — it HURTS. It\'s loud and confusing and people disappoint you."'))}
+${D(S('Sable','"The other side was quiet. Beautiful. Certain."'))}
+${N('Her scars are glowing faintly. Even in daylight.')}
+${I(IMG_SCARS,"Cracks in reality. Lightning frozen in skin.","manga-portrait")}
+${D(S('Sable','"Part of me never left. Part of me doesn\'t want to."'))}
+${D(S('Kairo','"Then why stay?"'))}
+${D(S('Sable','"Because the other side doesn\'t have THIS. Doesn\'t have people. Doesn\'t have moments that hurt because they MATTER. The boundary is beautiful, but it\'s empty. I\'d rather be broken and full than perfect and alone."'))}
+${P('Page 10 – 14')}
+${D(S('Sable','"Every time [the Absence] whispers that you should give up — you tell it: you found a prettier cage."'))}
+${N('His reflection in the window. Through the equations. It\'s SMILING. He sees it. Takes Sable\'s hand.')}
+${D(S('Sable','"The reflection is the part of you that wants to fade. Every time you retreat, you feed it. Every time you engage, you starve it."'))}
+${D(S('Marcus','"Faders who disappeared completely — their bodies were still there, but no one home."'))}
+${D(S('Vera','"Fading is growing. Every year, more people who just stop engaging."'))}
+${D(S('Marcus','"The outside world calls it depression. Dissociation. But it\'s PHYSICAL. The universe responding to consciousness that refuses to participate. You\'re the one who might help us understand why."'))}
+${P('Page 20 – 27')}
+${D(S('Sable','"You can stay with me. I have a couch. And I don\'t sleep much anyway."'))}
+${D(S('Kairo','"Why me?"'))}
+${D(S('Sable','"Because you\'re the first fader who ever asked before touching me. In the evaluation room. You asked \'Can I?\' No one asks. Everyone treats me like an experiment. You treated me like a person."'))}
+${TM(['"She pulled me back. Not because she had to. Because she chose to."','"She\'s scared too. She wants to go back to the beautiful empty place."','"But she stays HERE. In the mess. In the real."','"If she can do it with scars that glow — maybe I can do it too."'])}
+${ST('In the corner of the window — barely visible — a shape. Not the reflection. Something else. Watching. From the outside. THE INVISIBLE RACE.')}
+`;
+
+initKeyNav('ch-7.html', 'ch-9.html');
+</script>
+</body>
+</html>

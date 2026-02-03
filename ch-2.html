@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TŌGE — Chapter 2: The Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-t"><a href="../">T<span>Ō</span>GE</a></div>
+  <div class="nav-ch">Chapter Two: The Lab</div>
+  <div class="cs">
+    <button class="cs-b" id="csBtn">Chapters ▾</button>
+    <div class="dd" id="dd">
+      <a href="./"><span>00</span><span class="dt">Contents</span></a>
+      <a href="ch-1.html"><span>01</span><span class="dt">The Fade</span></a>
+      <a href="ch-2.html"><span>02</span><span class="dt">The Lab</span></a>
+      <a href="ch-3.html"><span>03</span><span class="dt">The Shelf</span></a>
+      <a href="ch-4.html"><span>04</span><span class="dt">The Evaluation</span></a>
+      <a href="ch-5.html"><span>05</span><span class="dt">The Lesson</span></a>
+      <a href="ch-6.html"><span>06</span><span class="dt">The Commons</span></a>
+      <a href="ch-7.html"><span>07</span><span class="dt">The Visit</span></a>
+      <a href="ch-8.html"><span>08</span><span class="dt">The Notebook</span></a>
+      <a href="ch-9.html"><span>09</span><span class="dt">The Reflection</span></a>
+      <a href="ch-10.html"><span>10</span><span class="dt">The Choice</span></a>
+    </div>
+  </div>
+  <div class="nav-p" id="prog"></div>
+</nav>
+
+<article class="ch">
+  <header class="ch-h">
+    <div class="ch-n">Chapter Two</div>
+    <h2 class="ch-t">The Lab</h2>
+  </header>
+
+  <div id="chapter-content"></div>
+
+  <div class="ch-end">
+    <div class="ch-end-t">Chapter 2 — The Lab — End</div>
+    <div class="ch-end-tx">He's inside. The real journey begins.</div>
+    <div class="ch-nav">
+      <a href="ch-1.html">← Previous</a>
+      <a href="ch-3.html">Next →</a>
+    </div>
+  </div>
+</article>
+
+<footer><p>TŌGE — Written by Arnaud Saint-Pierre<br><a href="./">← Arc One</a> · <a href="../">Hub</a></p></footer>
+
+<script src="../engine.js"></script>
+<script>
+const IMG_ATRIUM = "images/atrium.webp";
+const IMG_KLAB = "images/kessler-lab.webp";
+
+document.getElementById('chapter-content').innerHTML = `
+${N('A car on a road that shouldn\'t exist. Mountains too perfect, trees too still. Kairo in the passenger seat. Iris driving.')}
+${T('"Three hours from the city. No signs. GPS stopped working an hour ago. I should be scared. I think I\'m past scared. I think I\'m just... ready."')}
+${D(S('Kairo','"How many people have you brought here?"'))}
+${D(S('Iris','"Forty-three. You\'re forty-four."'))}
+${D(S('Kairo','"How many stopped fading?"'))}
+${ST('Iris doesn\'t answer. The road stretches ahead.')}
+${P('Page 3 – 6')}
+${I(IMG_ATRIUM,"The Atrium — Aggressively normal","manga-wide")}
+${T('"This is it? Where physicists solve the universe? It looks like a WeWork."')}
+${D(S('Iris','"The Atrium is for visitors. For people who need to believe the world still makes sense. It\'s not where you\'re going."'))}
+${N('A blank white wall. Iris places her palm on it.')}
+${D(S('Iris','"The Atrium is the mask."'))}
+${N('The wall RIPPLES. Like water. Like reality deciding to be flexible.')}
+${D(S('Iris','"This is the face."'))}
+${N('Beyond: a corridor going DOWN at an impossible angle. Lights that SUGGEST rather than illuminate. Equations on the walls that MOVE and shift.')}
+${D(S('Iris','"This is your first participation, Kairo. You can turn around. Or you can step forward into something you don\'t understand."'))}
+${N('His foot crosses the threshold. Everything shifts. The corridor BREATHES. The equations NOTICE him — rippling outward like a stone in water. His reflection in the floor is SOLID. More solid than it\'s been in months.')}
+${T('"The first step felt like being born. Or maybe like being seen for the first time."')}
+${P('Page 7 – 9')}
+${N('Stars underground. A door: "CAUSAL LOOP TESTING — DO NOT ENTER BEFORE YOU\'VE ALREADY LEFT." Scientists arguing in harmonics. A tree growing upside down from the ceiling.')}
+${D(S('Iris','"Gravitational inversion study. Don\'t ask how they water it."'))}
+${N('A wooden door. Nameplate: DR. EMIL KESSLER — DIRECTOR.')}
+${D(S('Iris','"This is where I leave you. I find people. I don\'t fix them. Remember: you\'re not special because you\'re fading. You\'re special because you decided to fight it."'))}
+${P('Page 10 – 15')}
+${I(IMG_KLAB,"Kessler in the cathedral of science","manga-wide")}
+${N('KESSLER. Old. White hair, wild but precise. Eyes that have seen too much.')}
+${D(S('Kessler','"I know who you are. I know you have eleven months, though I suspect closer to nine. What I don\'t know is whether you\'re going to be useful or just another beautiful mind that wastes its potential. Convince me."'))}
+${D(S('Kessler','"I have a building full of watchers. I don\'t need another one. Are you going to watch? Or are you going to touch?"'))}
+${D(S('Kairo','"I don\'t know. I\'ve watched my whole life. Doing something means choosing. And choosing means all the other choices die. So I just watched them all. Forever."'))}
+${D(S('Kairo','"But now I\'m disappearing. And I realized — I didn\'t save my potential futures. I murdered them. By never choosing. My brother LIVED. Even if it broke him. He was REAL. I\'ve been a ghost for years."'))}
+${D(S('Kairo','"I\'d rather die trying to be real than fade away being safe."'))}
+${D(S('Kessler','"That\'s the first true thing you\'ve said since you walked in."'))}
+${P('Page 16 – 22')}
+${D(S('Kessler','"I\'ve solved 99.96% of physics. The 0.04% — it\'s not a gap. It\'s a wall. Why does observation create reality? Why does looking at something make it real? That\'s the reason I built this place. And you\'re going to help me."'))}
+${D(S('Kessler','"You\'re fading — you have one foot in a place none of us can go. I don\'t need another genius. I need someone who\'s BETWEEN. Someone who can see the seam."'))}
+${N('The handshake. A jolt — like two frequencies finding resonance.')}
+${D(S('Kessler','"Your decay rate just slowed. Just from shaking my hand. You respond to connection faster than anyone I\'ve measured. Welcome to the Lab, Mr. Vance."'))}
+${N('The wall goes transparent. THE STACKS. Machines the size of buildings. Catwalks crossing chasms of light. Equations written in the air. Reality being bent.')}
+${T('"Eleven months ago, I was watching chess games in a shitty apartment. Now I\'m looking at the place where gods learn to be gods. Let\'s see if I can keep up."')}
+`;
+
+initKeyNav('ch-1.html', 'ch-3.html');
+</script>
+</body>
+</html>
