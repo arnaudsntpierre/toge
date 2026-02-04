@@ -54,11 +54,13 @@
 
 <script src="../engine.js"></script>
 <script>
-// Image paths — swap these for real files when art is ready
-const IMG_EYE = "images/eye.webp";
-const IMG_KAIRO = "images/kairo.webp";
-const IMG_APT = "images/apartment.webp";
-const IMG_FADE = "images/fade.webp";
+// Production art — Dissolution Ink style
+const IMG_EYE = "images/eye.png";
+const IMG_KAIRO = "images/kairo.png";
+const IMG_APT = "images/apartment.png";
+const IMG_FADE = "images/fade.png";
+const IMG_PHONE = "images/phone.png";
+const IMG_REACH = "images/reach.png";
 
 document.getElementById('chapter-content').innerHTML = `
 <div style="margin:48px 0;height:60vh;background:#000;border:1px solid rgba(184,58,58,0.08)"></div>
@@ -71,12 +73,12 @@ ${N('The face. KAIRO VANCE. 27. Unshaved. Handsome if you looked — but the com
 ${I(IMG_KAIRO,"Kairo Vance — The Observer","manga-char")}
 ${TM(['"The dopamine response should activate now. Pattern recognition reward. Victory anticipation."','"Nothing."'])}
 ${P('Page 4')}
-${I(IMG_APT,"A museum of almost. Exhibition ongoing. No visitors.","manga-wide")}
 ${N('The room tells the story his face won\'t. A wall of monitors — stock tickers, news feeds, social media — all paused mid-scroll. Books everywhere, half-read, spines cracked at the 30% mark. A guitar in the corner, dust on the strings. A photo frame on the desk, face DOWN. Light through blinds he hasn\'t opened — slats casting prison bars across the floor.')}
 ${ST('Kairo sits small in the frame. The room is the subject. He\'s just an object in it.')}
 ${P('Page 5')}
 ${N('His phone lights up. A text from "Mom" with a heart emoji he didn\'t add — she did, from his phone, years ago.')}
 ${D(S('Mom','"Happy birthday sweetheart. Call when you can. Love you always."'))}
+${I(IMG_REACH,"The cursor blinks. Empty field. Phone screen going dark.","manga-portrait")}
 ${TM(['"Thanks Mom I\'ll ca—" <em>Deleted.</em>','"Love you t—" <em>Deleted.</em>','The cursor blinks. Empty field. Phone screen going dark. Unanswered.'])}
 ${P('Page 6')}
 ${N('Kairo at the window. City below. People moving. Living. He watches like a nature documentary.')}
@@ -106,6 +108,7 @@ ${P('Page 13')}
 ${N('He opens the door. IRIS CHEN. Not clinical. Not corporate. A college professor who\'s seen too much. A scar along her jaw she doesn\'t hide. Manila envelope. Her eyes meet his — and HOLD. She SEES him. For the first time in months, someone is looking directly at Kairo Vance.')}
 ${D(S('Iris','"My name is Iris Chen. I specialize in finding people who are disappearing. And you, Mr. Vance, are almost gone."'))}
 ${P('Page 14 – 16')}
+${I(IMG_APT,"Two strangers. One card. The point of no return.","manga-wide")}
 ${D(S('Iris','"What do you know about the observer effect?"'))}
 ${D(S('Kairo','"Quantum mechanics. The act of observation affects the system being observed—"'))}
 ${D(S('Iris','"Not particles. People."'))}
@@ -125,6 +128,7 @@ ${P('Page 18 – 20')}
 ${N('Alone. The museum of his unlived life. He picks up the face-down photograph. Something cracks. The first real emotion. He puts it face UP. Opens his mom\'s text. Types:')}
 ${D(S('Kairo','"I love you. I\'m sorry I\'ve been gone. I\'m going to try to come back."'))}
 ${N('Sends it. His hand — slightly more solid.')}
+${I(IMG_PHONE,"The first participation. The first step back.","manga-portrait")}
 ${I(IMG_FADE,"The Fade — Kairo Vance, disappearing in plain sight","manga-wide")}
 ${D(S('Kairo','"Eleven months. Let\'s see if I can do it in ten."'))}
 ${N('He walks out. The apartment sits empty. His reflection lingers one extra panel. It\'s smiling again.')}
