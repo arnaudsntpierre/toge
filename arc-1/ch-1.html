@@ -6,7 +6,86 @@
 <title>TŌGE — Chapter 1: The Fade</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--cr:#B83A3A;--crd:#8B1A1A;--bg:#0A0A0C;--bg2:#0E0E11;--bg3:#141418;--t1:#E8E0D8;--t2:#9A9490;--t3:#5A5652;--td:#F0EBE3;--gold:#CDA24E;--bdr:rgba(184,58,58,0.15)}
+::selection{background:var(--crd);color:var(--t1)}
+html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:var(--crd) var(--bg)}
+body{background:var(--bg);color:var(--t1);font-family:'Cormorant Garamond',Georgia,serif;font-size:19px;line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.ch{max-width:720px;margin:0 auto;padding:0 24px 160px}
+.ch-h{padding:120px 0 80px;border-bottom:1px solid var(--bdr);margin-bottom:60px}
+.ch-n{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--cr);margin-bottom:20px}
+.ch-t{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,6vw,56px);font-weight:300;line-height:1.2;margin-bottom:16px}
+.ch-d{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--t3)}
+.pm{display:flex;align-items:center;gap:16px;margin:56px 0 32px}
+.pm::before,.pm::after{content:'';flex:1;height:1px;background:rgba(255,255,255,0.04)}
+.pm span{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--t3)}
+.stg{font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.9;color:var(--t3);margin:16px 0;padding-left:16px;border-left:2px solid rgba(184,58,58,0.2)}
+.dlg{margin:20px 0;padding:16px 28px;background:rgba(255,255,255,0.02);border-left:3px solid var(--crd);border-radius:0 2px 2px 0}
+.dlg-s{font-family:'Outfit',sans-serif;font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--cr);margin-bottom:6px}
+.dlg p{font-size:20px;font-weight:400;line-height:1.75;color:var(--td);font-style:italic}
+.dlg-a{border-left-color:var(--t3);background:rgba(255,255,255,0.01)}
+.dlg-a .dlg-s{color:var(--t3)}
+.dlg-a p{color:var(--t2)}
+.dlg-r{border-left-color:var(--gold);background:rgba(205,162,78,0.03)}
+.dlg-r .dlg-s{color:var(--gold)}
+.dlg-r p{color:var(--gold);opacity:.9;font-weight:500}
+.nar{margin:20px 0;font-size:19px;line-height:1.85}
+.tht{margin:24px 0;padding:20px 32px;font-style:italic;color:var(--t2);font-size:18px;line-height:1.9;position:relative}
+.tht::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--t3),transparent)}
+.mom{margin:48px 0;padding:40px 32px;text-align:center;position:relative}
+.mom::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(184,58,58,0.06) 0%,transparent 70%);pointer-events:none}
+.mom p{font-size:24px;font-weight:500;line-height:1.8}
+.mom .big{font-size:32px;font-weight:600;color:var(--cr);display:block;margin:12px 0}
+.aph{margin:40px 0;aspect-ratio:16/9;background:linear-gradient(135deg,var(--bg3) 0%,#1A1A20 100%);border:1px solid var(--bdr);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden}
+.aph::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(184,58,58,0.05) 0%,transparent 70%)}
+.aph-i{width:40px;height:40px;border:1px solid var(--t3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--t3)}
+.aph-t{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--t3);letter-spacing:2px;text-transform:uppercase}
+.aph-d{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--t3);font-style:italic;max-width:300px;text-align:center}
+.sep{display:flex;align-items:center;justify-content:center;gap:16px;margin:48px 0;color:var(--t3)}
+.sep::before,.sep::after{content:'';width:40px;height:1px;background:rgba(255,255,255,0.06)}
+.ch-end{padding:80px 0;text-align:center;border-top:1px solid var(--bdr);margin-top:80px}
+.ch-end-t{font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--t3);margin-bottom:32px}
+.ch-end-tx{font-size:18px;font-style:italic;color:var(--t2);max-width:400px;margin:0 auto 40px;line-height:1.8}
+.ch-nav{display:flex;justify-content:center;gap:32px;flex-wrap:wrap}
+.ch-nav a{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--cr);text-decoration:none;padding:12px 24px;border:1px solid var(--bdr);transition:all .3s}
+.ch-nav a:hover{background:rgba(184,58,58,0.1);border-color:var(--cr)}
+.manga-panel{margin:48px 0;position:relative;overflow:hidden;opacity:0;transform:translateY(20px);transition:opacity 0.8s ease,transform 0.8s ease}
+.manga-panel.visible{opacity:1;transform:translateY(0)}
+.manga-panel img{width:100%;display:block;filter:brightness(0.92) contrast(1.05)}
+.manga-panel::after{content:'';position:absolute;inset:0;box-shadow:inset 0 0 60px rgba(10,10,12,0.6);pointer-events:none}
+.manga-panel .mp-cap{position:absolute;bottom:0;left:0;right:0;padding:16px 20px;background:linear-gradient(to top,rgba(10,10,12,0.85) 0%,transparent 100%);font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--t3);z-index:1}
+.manga-wide{border:1px solid rgba(184,58,58,0.12)}
+.manga-wide img{aspect-ratio:16/9;object-fit:cover}
+.manga-char{max-width:600px;margin-left:auto;margin-right:auto;border:1px solid rgba(255,255,255,0.06)}
+.manga-char img{aspect-ratio:auto}
+.manga-splash{border:1px solid rgba(184,58,58,0.2)}
+.manga-splash img{aspect-ratio:auto;max-height:85vh;object-fit:contain;margin:0 auto}
+.manga-portrait{max-width:500px;margin-left:auto;margin-right:auto;border:1px solid rgba(184,58,58,0.15)}
+.manga-portrait img{aspect-ratio:auto;max-height:80vh;object-fit:contain}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,12,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 24px;display:flex;align-items:center;justify-content:space-between;transform:translateY(-100%);transition:transform .3s}
+nav.v{transform:translateY(0)}
+.nav-t{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--t3)}
+.nav-t a{color:inherit;text-decoration:none;transition:color .2s}
+.nav-t a:hover{color:var(--cr)}
+.nav-t span{color:var(--cr)}
+.nav-ch{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--t2)}
+.nav-p{position:absolute;bottom:0;left:0;height:2px;background:var(--cr);transition:width .15s}
+.cs{position:relative}
+.cs-b{background:none;border:1px solid rgba(255,255,255,0.08);color:var(--t2);font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 14px;cursor:pointer;transition:all .2s}
+.cs-b:hover{border-color:var(--cr);color:var(--cr)}
+.dd{position:absolute;top:100%;right:0;margin-top:8px;background:#1A1A20;border:1px solid rgba(255,255,255,0.08);min-width:240px;display:none;z-index:200}
+.dd.open{display:block}
+.dd a{display:flex;align-items:baseline;gap:12px;padding:10px 16px;text-decoration:none;color:var(--t2);font-family:'IBM Plex Mono',monospace;font-size:11px;transition:all .2s;border-bottom:1px solid rgba(255,255,255,0.03)}
+.dd a:last-child{border-bottom:none}
+.dd a:hover{background:rgba(184,58,58,0.1);color:var(--cr)}
+.dd .dt{font-family:'Cormorant Garamond',serif;font-size:14px}
+footer{padding:60px 24px;text-align:center;border-top:1px solid rgba(255,255,255,0.04)}
+footer p{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--t3);line-height:2}
+footer a{color:var(--cr);text-decoration:none;transition:color .2s}
+footer a:hover{color:var(--t1)}
+@media(max-width:768px){body{font-size:17px}.manga-char{max-width:100%}.manga-portrait{max-width:100%}.manga-panel{margin:32px 0}.ch{padding:0 16px 120px}.ch-h{padding:80px 0 60px}.dlg{padding:14px 20px}.tht{padding:16px 24px}.mom p{font-size:20px}.mom .big{font-size:26px}}
+</style>
 </head>
 <body>
 
@@ -52,7 +131,65 @@
 
 <footer><p>TŌGE — Written by Arnaud Saint-Pierre<br><a href="./">← Arc One</a> · <a href="../">Hub</a></p></footer>
 
-<script src="../engine.js"></script>
+<script>
+/* ══════════════════════════════════════════════════════════════
+   TŌGE — Engine (inlined for standalone preview)
+   ══════════════════════════════════════════════════════════════ */
+const I = (src, cap, cls) =>
+  `<div class="manga-panel ${cls || 'manga-wide'}"><img src="${src}" alt="${cap}" loading="lazy"><div class="mp-cap">${cap}</div></div>`;
+const D = (s, p) =>
+  `<div class="dlg${p ? ' ' + p : ''}">${s}</div>`;
+const S = (n, t) =>
+  `<div class="dlg-s">${n}</div><p>${t}</p>`;
+const P = t =>
+  `<div class="pm"><span>${t}</span></div>`;
+const N = t =>
+  `<p class="nar">${t}</p>`;
+const T = t =>
+  `<div class="tht"><p>${t}</p></div>`;
+const TM = (t) =>
+  `<div class="tht">${t.map(x => '<p>' + x + '</p>').join('')}</div>`;
+const M = (t, b) =>
+  `<div class="mom"><p>${t}</p>${b ? '<span class="big">' + b + '</span>' : ''}</div>`;
+const A = (i, t, d) =>
+  `<div class="aph"><div class="aph-i">${i}</div><div class="aph-t">${t}</div>${d ? '<div class="aph-d">' + d + '</div>' : ''}</div>`;
+const ST = t =>
+  `<p class="stg">${t}</p>`;
+const SP = () =>
+  `<div class="sep"><span>◆</span></div>`;
+
+function initNav() {
+  const nav = document.getElementById('nav');
+  const prog = document.getElementById('prog');
+  if (!nav) return;
+  window.addEventListener('scroll', () => {
+    const s = window.scrollY;
+    const d = document.documentElement.scrollHeight - window.innerHeight;
+    nav.classList.toggle('v', s > 300);
+    if (prog && d > 0) prog.style.width = (s / d * 100) + '%';
+  });
+  const csBtn = document.getElementById('csBtn');
+  const dd = document.getElementById('dd');
+  if (csBtn && dd) {
+    csBtn.addEventListener('click', e => { e.stopPropagation(); dd.classList.toggle('open'); });
+    document.addEventListener('click', () => dd.classList.remove('open'));
+  }
+}
+function initPanelObserver() {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  setTimeout(() => { document.querySelectorAll('.manga-panel').forEach(p => obs.observe(p)); }, 100);
+}
+function initKeyNav(prevUrl, nextUrl) {
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft' && prevUrl) window.location.href = prevUrl;
+    else if (e.key === 'ArrowRight' && nextUrl) window.location.href = nextUrl;
+  });
+}
+function initToge() { initNav(); initPanelObserver(); }
+document.addEventListener('DOMContentLoaded', initToge);
+</script>
 <script>
 // Production art — Dissolution Ink style
 const IMG_EYE = "images/eye.png";
